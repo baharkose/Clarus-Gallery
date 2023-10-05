@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+header{
+    padding: 20px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 6px solid red; */
+    background-color: #f6b088b6;
+    position:sticky;
+    z-index: 100;
+    top: 0;
+    
+    
+
+
+}
+
+.title{
+    /* border: 6px solid black; */
+    font-size: 2rem;
+
+
+}
+.menu{
+    /* border: 6px solid blue; */
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+ul{
+    display: flex;
+    gap:2rem;
+    list-style-type: none;
+
+}
+li{
+    padding: 1rem;
+}
+li:hover{
+    background-color: orange;
+    border-radius: 1rem;
+
+}
+
+ul a{
+    text-decoration: none;
+    
+}
+
+main{
+    padding: 2.1rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    /* border: 6px solid red; */
+    background-color: #f4f4f4;
+
+
+}
+.box{
+margin:20px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+
+.img{
+    width:400px;
+    height: 350px;
+    min-width: auto;
+    min-height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 6px solid red; */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+/* outline:40px  solid #ffffff8b; */
+/* outline-offset:5px;
+/* outline-offset: ; */
+border-radius: 5px;
+/* margin: 20px; */
+position: relative;
+
+}
+
+.img1{
+    background-image: url("https://picsum.photos/id/6/350/300");
+    cursor:pointer;
+    
+  
+}
+
+/* .text{
+    visibility: hidden;
+    text-align:center;
+    vertical-align: auto;
+}
+.img:hover .text{
+
+visibility: visible;
+} */
+.img:hover::before{
+    
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.425);
+    border: 1px solid white;
+    border-radius:5px;
+    padding: 5px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.img1:hover::before{
+    content: "Travis Leery";
+}
+
+.img2:hover::before{
+    content: "Jonas";
+}
+
+.img3:hover::before{
+    content: "NEOM";
+}
+
+.img4:hover::before{
+    content: "Birmingham Museums";
+}
+
+.img5:hover::before{
+    content: "Saul Macias";
+}
+.img2{
+    background-image: url("https://picsum.photos/id/4/350/300");
+}
+.img3{
+    background-image: url("https://picsum.photos/id/67/350/300");
+}
+.img4{
+    background-image: url("https://picsum.photos/id/4/350/300");
+}
+.img5{
+    background-image: url("https://picsum.photos/id/8/350/300");
+}
+
+footer{
+    
+    text-align:center;
+    font-size: 1rem;
+    padding: 2rem;
+    background-color: #f6b088;
+
+}
