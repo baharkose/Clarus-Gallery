@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: black;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 600;
 
 }
@@ -15,7 +15,7 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
     /* border: 6px solid red; */
-    background-color: #f6b088b6;
+    background-color: rgba(247,107,28,0.5);
     position:sticky;
     z-index: 100;
     top: 0;
@@ -27,7 +27,7 @@ header{
 
 .title{
     /* border: 6px solid black; */
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 
 }
@@ -44,10 +44,11 @@ ul{
 
 }
 li{
-    padding: 1rem;
+    padding: 15px;
+    
 }
 li:hover{
-    background-color: orange;
+    background-color: #f76b1c;
     border-radius: 1rem;
 
 }
@@ -81,14 +82,16 @@ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     min-height:auto;
     background-repeat: no-repeat;
     background-size: cover;
-    /* border: 6px solid red; */
+    /* border: px solid rgb(255, 255, 255); */
     /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
-/* outline:40px  solid #ffffff8b; */
-/* outline-offset:5px;
-/* outline-offset: ; */
-border-radius: 5px;
+outline:20px  solid #ffffff8b;
+/* outline-offset:5px;*/
+
+border-radius: 1px;
 /* margin: 20px; */
 position: relative;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
 
 }
 
@@ -112,6 +115,8 @@ visibility: visible;
     
     font-size: 2rem;
     background-color: rgba(255, 255, 255, 0.425);
+    filter: blur(1);
+
     border: 1px solid white;
     border-radius:5px;
     padding: 5px;
@@ -148,7 +153,7 @@ visibility: visible;
     background-image: url("https://picsum.photos/id/67/350/300");
 }
 .img4{
-    background-image: url("https://picsum.photos/id/4/350/300");
+    background-image: url("https://picsum.photos/id/12/350/300");
 }
 .img5{
     background-image: url("https://picsum.photos/id/8/350/300");
@@ -157,7 +162,9 @@ visibility: visible;
 footer{
     
     text-align:center;
-    font-size: 1rem;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
     padding: 2rem;
     background-color: #f6b088;
 
